@@ -1,0 +1,511 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Tag JSP · Formation Spring Security</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="08-deconnexion.html" />
+    
+    
+    <link rel="prev" href="06-csrf.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
+            
+                <a href="../01-introduction/">
+            
+                    
+                    Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Spring Security Web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01-maven.html">
+            
+                <a href="01-maven.html">
+            
+                    
+                    Dépendances Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02-filtre.html">
+            
+                <a href="02-filtre.html">
+            
+                    
+                    springSecurityFilterChain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03-activer.html">
+            
+                <a href="03-activer.html">
+            
+                    
+                    Activer Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04-config-http.html">
+            
+                <a href="04-config-http.html">
+            
+                    
+                    Configuration Http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="05-personnaliser.html">
+            
+                <a href="05-personnaliser.html">
+            
+                    
+                    Personnaliser la page d'authentification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="06-csrf.html">
+            
+                <a href="06-csrf.html">
+            
+                    
+                    CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="07-taglibs.html">
+            
+                <a href="07-taglibs.html">
+            
+                    
+                    Tag JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="08-deconnexion.html">
+            
+                <a href="08-deconnexion.html">
+            
+                    
+                    Gérer la déconnexion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="09-identite.html">
+            
+                <a href="09-identite.html">
+            
+                    
+                    Configurer le gestionnaire d'identité
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10-methodes.html">
+            
+                <a href="10-methodes.html">
+            
+                    
+                    Sécuriser des méthodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../99-tp/">
+            
+                <a href="../99-tp/">
+            
+                    
+                    Travaux pratiques
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../99-tp/01-premier-pas.html">
+            
+                <a href="../99-tp/01-premier-pas.html">
+            
+                    
+                    Premiers pas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../99-tp/02-connexion.html">
+            
+                <a href="../99-tp/02-connexion.html">
+            
+                    
+                    Page de connexion personnalisée
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../99-tp/03-jdbc.html">
+            
+                <a href="../99-tp/03-jdbc.html">
+            
+                    
+                    Authentification via JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../99-tp/04-profil.html">
+            
+                <a href="../99-tp/04-profil.html">
+            
+                    
+                    Sécurisation par profil
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Tag JSP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tag-jsp">Tag JSP</h1>
+<p>Spring Security fournit des tags permettant d&#x2019;appliquer des contraintes de s&#xE9;curit&#xE9; dans une page JSP.</p>
+<p>D&#xE9;clarer la librairie de tag::</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">%@</span> <span class="hljs-attr">taglib</span> <span class="hljs-attr">prefix</span>=<span class="hljs-string">&quot;sec&quot;</span> <span class="hljs-attr">uri</span>=<span class="hljs-string">&quot;http://www.springframework.org/security/tags&quot;</span> %&gt;</span>
+</code></pre>
+<p>D&#xE9;pendance Maven::</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.security<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-security-taglibs<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring-security.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h2 id="tag-de-contr&#xF4;le-dacc&#xE8;s">Tag de contr&#xF4;le d&apos;acc&#xE8;s</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">sec:authorize</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;hasRole(&apos;supervisor&apos;)&quot;</span>&gt;</span>
+    Je ne suis accessible qu&apos;aux utilisateurs ayant le r&#xF4;le supervisor
+<span class="hljs-tag">&lt;/<span class="hljs-name">sec:authorize</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">sec:authorize</span> <span class="hljs-attr">url</span>=<span class="hljs-string">&quot;/admin&quot;</span>&gt;</span>
+    Je ne suis accessible qu&apos;aux utilisateurs ayant les droits sur /admin
+<span class="hljs-tag">&lt;/<span class="hljs-name">sec:authorize</span>&gt;</span>
+</code></pre>
+<h2 id="tag-csrf-input">Tag CSRF Input</h2>
+<pre><code class="lang-html">   <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;/do/something&quot;</span>&gt;</span>
+       <span class="hljs-comment">&lt;!-- g&#xE9;n&#xE9;ration du champ cach&#xE9; CSRF --&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">sec:csrfInput</span> /&gt;</span>
+       Name:<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;name&quot;</span> /&gt;</span>
+       ...
+   <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<h2 id="g&#xE9;rer-lautorisation-des-urls">G&#xE9;rer l&apos;autorisation des URLs</h2>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">configure</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+    http.authorizeRequests()
+            <span class="hljs-comment">// les requ&#xEA;tes ci-dessous ne seront pas soumises &#xE0; authentification</span>
+            .antMatchers(<span class="hljs-string">&quot;/resources/**&quot;</span>, <span class="hljs-string">&quot;/signup&quot;</span>, <span class="hljs-string">&quot;/about&quot;</span>).permitAll()
+            <span class="hljs-comment">// seules les utilisateurs ayant le r&#xF4;le ADMIN peuvent acc&#xE9;der &#xE0; /admin</span>
+            .antMatchers(<span class="hljs-string">&quot;/admin/**&quot;</span>).hasRole(<span class="hljs-string">&quot;ADMIN&quot;</span>)
+            <span class="hljs-comment">// /db accessible qu&apos;aux ADMIN et DBA</span>
+            .antMatchers(<span class="hljs-string">&quot;/db/**&quot;</span>).access(<span class="hljs-string">&quot;hasRole(&apos;ADMIN&apos;) and hasRole(&apos;DBA&apos;)&quot;</span>)
+            <span class="hljs-comment">// les autres requ&#xEA;tes sont soumises &#xE0; authentification</span>
+            .anyRequest().authenticated()
+            .and()
+            <span class="hljs-comment">// ...</span>
+            .formLogin();
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06-csrf.html" class="navigation navigation-prev " aria-label="Previous page: CSRF">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="08-deconnexion.html" class="navigation navigation-next " aria-label="Next page: Gérer la déconnexion">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tag JSP","level":"1.3.7","depth":2,"next":{"title":"Gérer la déconnexion","level":"1.3.8","depth":2,"path":"02-web/08-deconnexion.md","ref":"02-web/08-deconnexion.md","articles":[]},"previous":{"title":"CSRF","level":"1.3.6","depth":2,"path":"02-web/06-csrf.md","ref":"02-web/06-csrf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-spring-security","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Security","gitbook":"*"},"file":{"path":"02-web/07-taglibs.md","mtime":"2018-05-28T09:59:46.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T10:02:41.382Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-edit/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

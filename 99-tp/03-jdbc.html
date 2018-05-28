@@ -1,0 +1,564 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Authentification via JDBC · Formation Spring Security</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-profil.html" />
+    
+    
+    <link rel="prev" href="02-connexion.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-introduction/">
+            
+                <a href="../01-introduction/">
+            
+                    
+                    Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-web/">
+            
+                <a href="../02-web/">
+            
+                    
+                    Spring Security Web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-web/01-maven.html">
+            
+                <a href="../02-web/01-maven.html">
+            
+                    
+                    Dépendances Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-web/02-filtre.html">
+            
+                <a href="../02-web/02-filtre.html">
+            
+                    
+                    springSecurityFilterChain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-web/03-activer.html">
+            
+                <a href="../02-web/03-activer.html">
+            
+                    
+                    Activer Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02-web/04-config-http.html">
+            
+                <a href="../02-web/04-config-http.html">
+            
+                    
+                    Configuration Http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02-web/05-personnaliser.html">
+            
+                <a href="../02-web/05-personnaliser.html">
+            
+                    
+                    Personnaliser la page d'authentification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02-web/06-csrf.html">
+            
+                <a href="../02-web/06-csrf.html">
+            
+                    
+                    CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../02-web/07-taglibs.html">
+            
+                <a href="../02-web/07-taglibs.html">
+            
+                    
+                    Tag JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../02-web/08-deconnexion.html">
+            
+                <a href="../02-web/08-deconnexion.html">
+            
+                    
+                    Gérer la déconnexion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../02-web/09-identite.html">
+            
+                <a href="../02-web/09-identite.html">
+            
+                    
+                    Configurer le gestionnaire d'identité
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../02-web/10-methodes.html">
+            
+                <a href="../02-web/10-methodes.html">
+            
+                    
+                    Sécuriser des méthodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Travaux pratiques
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01-premier-pas.html">
+            
+                <a href="01-premier-pas.html">
+            
+                    
+                    Premiers pas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-connexion.html">
+            
+                <a href="02-connexion.html">
+            
+                    
+                    Page de connexion personnalisée
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="03-jdbc.html">
+            
+                <a href="03-jdbc.html">
+            
+                    
+                    Authentification via JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04-profil.html">
+            
+                <a href="04-profil.html">
+            
+                    
+                    Sécurisation par profil
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Authentification via JDBC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="authentification-via-jdbc">Authentification via JDBC</h1>
+<h2 id="hashage-du-mot-de-passe">Hashage du mot de passe</h2>
+<ul>
+<li>Compl&#xE9;ter la classe <em>dev.paie.config.ServicesConfig</em> :</li>
+</ul>
+<pre><code class="lang-java">...
+<span class="hljs-keyword">import</span> org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+<span class="hljs-keyword">import</span> org.springframework.security.crypto.password.PasswordEncoder;
+...
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ServicesConfig</span> </span>{
+
+    <span class="hljs-comment">// le bean `passwordEncoder` contient l&apos;algorithme de hashage des mots de passe de l&apos;application.</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> PasswordEncoder <span class="hljs-title">passwordEncoder</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> BCryptPasswordEncoder();
+    }
+    ...
+
+}
+</code></pre>
+<p>Voici un exemple d&apos;utilisation de ce bean :</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InitialiserDonneesServiceDev</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">InitialiserDonneesService</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span> <span class="hljs-keyword">private</span> PasswordEncoder passwordEncoder;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-meta">@Transactional</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initialiser</span><span class="hljs-params">()</span> </span>{
+        String iciUnMotDePasse = <span class="hljs-string">&quot;topSecret&quot;</span>;
+        String iciMotDePasseHashe = <span class="hljs-keyword">this</span>.passwordEncoder.encode(iciUnMotDePasse);
+    }
+
+}
+</code></pre>
+<h2 id="configuration-jdbc">Configuration JDBC</h2>
+<p>L&apos;authentification va &#xEA;tre d&#xE9;sormais pilot&#xE9;e par une table UTILISATEUR.</p>
+<ul>
+<li>Cr&#xE9;er une entit&#xE9; <code>dev.paie.entite.Utilisateur</code> :</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Utilisateur</span> </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> ROLES {
+        ROLE_ADMINISTRATEUR, ROLE_UTILISATEUR
+    }
+
+    <span class="hljs-keyword">private</span> Integer id;
+    <span class="hljs-keyword">private</span> String nomUtilisateur;
+    <span class="hljs-keyword">private</span> String motDePasse;
+    <span class="hljs-keyword">private</span> Boolean estActif;
+    <span class="hljs-keyword">private</span> ROLES role;
+    ...
+
+}
+</code></pre>
+<ul>
+<li><p>Effectuer le mapping JPA de cette entit&#xE9;.</p>
+</li>
+<li><p>Compl&#xE9;ter la configuration <code>dev.paie.config.SecurityConfig</code> comme suit :</p>
+</li>
+</ul>
+<pre><code class="lang-java">...
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SecurityConfig</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">WebSecurityConfigurerAdapter</span> </span>{
+
+    <span class="hljs-comment">// injection du bean de hashage de mot de passage</span>
+    <span class="hljs-meta">@Autowired</span> <span class="hljs-keyword">private</span> PasswordEncoder passwordEncoder;
+
+    <span class="hljs-comment">// injection du bean de source de donn&#xE9;es</span>
+    <span class="hljs-meta">@Autowired</span> <span class="hljs-keyword">private</span> DataSource dataSource;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">configure</span><span class="hljs-params">(AuthenticationManagerBuilder auth)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-comment">// changement de strat&#xE9;gie M&#xE9;moire =&gt; JDBC</span>
+        auth.jdbcAuthentication() 
+
+            <span class="hljs-comment">// configuration de la source de donn&#xE9;es</span>
+            .dataSource(dataSource)
+
+            <span class="hljs-comment">// configuration de l&apos;algorithme de hashage des mots de passe</span>
+            .passwordEncoder(passwordEncoder)
+
+            <span class="hljs-comment">// requ&#xEA;te pour obtenir les informations d&apos;un utilisateur en fonction du nom d&apos;utilisateur</span>
+            .usersByUsernameQuery(<span class="hljs-string">&quot;select NOM_UTILISATEUR, MOT_DE_PASSE, EST_ACTIF from UTILISATEUR where NOM_UTILISATEUR=?&quot;</span>) &lt;<span class="hljs-number">6</span>&gt;
+
+            <span class="hljs-comment">// requ&#xEA;te pour obtenir les r&#xF4;les d&apos;un utilisateur</span>
+            .authoritiesByUsernameQuery(<span class="hljs-string">&quot;select NOM_UTILISATEUR,ROLE from UTILISATEUR where NOM_UTILISATEUR = ?&quot;</span>); &lt;<span class="hljs-number">7</span>&gt;
+    }
+
+    ...
+
+}
+</code></pre>
+<ul>
+<li><p>Compl&#xE9;ter le service <code>dev.paie.service.InitialiserDonneesServiceDev</code> pour ins&#xE9;rer des utilisateurs de diff&#xE9;rents profils au d&#xE9;marrage de l&apos;application.</p>
+</li>
+<li><p>V&#xE9;rifier que l&apos;authentification fonctionne.</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-connexion.html" class="navigation navigation-prev " aria-label="Previous page: Page de connexion personnalisée">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-profil.html" class="navigation navigation-next " aria-label="Next page: Sécurisation par profil">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Authentification via JDBC","level":"1.4.3","depth":2,"next":{"title":"Sécurisation par profil","level":"1.4.4","depth":2,"path":"99-tp/04-profil.md","ref":"99-tp/04-profil.md","articles":[]},"previous":{"title":"Page de connexion personnalisée","level":"1.4.2","depth":2,"path":"99-tp/02-connexion.md","ref":"99-tp/02-connexion.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-spring-security","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Security","gitbook":"*"},"file":{"path":"99-tp/03-jdbc.md","mtime":"2018-05-28T09:59:46.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T10:02:41.382Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-edit/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

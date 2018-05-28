@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spring Security · Formation Spring Security</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../02-web/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-web/">
+            
+                <a href="../02-web/">
+            
+                    
+                    Spring Security Web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-web/01-maven.html">
+            
+                <a href="../02-web/01-maven.html">
+            
+                    
+                    Dépendances Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-web/02-filtre.html">
+            
+                <a href="../02-web/02-filtre.html">
+            
+                    
+                    springSecurityFilterChain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-web/03-activer.html">
+            
+                <a href="../02-web/03-activer.html">
+            
+                    
+                    Activer Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02-web/04-config-http.html">
+            
+                <a href="../02-web/04-config-http.html">
+            
+                    
+                    Configuration Http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02-web/05-personnaliser.html">
+            
+                <a href="../02-web/05-personnaliser.html">
+            
+                    
+                    Personnaliser la page d'authentification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02-web/06-csrf.html">
+            
+                <a href="../02-web/06-csrf.html">
+            
+                    
+                    CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../02-web/07-taglibs.html">
+            
+                <a href="../02-web/07-taglibs.html">
+            
+                    
+                    Tag JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../02-web/08-deconnexion.html">
+            
+                <a href="../02-web/08-deconnexion.html">
+            
+                    
+                    Gérer la déconnexion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../02-web/09-identite.html">
+            
+                <a href="../02-web/09-identite.html">
+            
+                    
+                    Configurer le gestionnaire d'identité
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../02-web/10-methodes.html">
+            
+                <a href="../02-web/10-methodes.html">
+            
+                    
+                    Sécuriser des méthodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../99-tp/">
+            
+                <a href="../99-tp/">
+            
+                    
+                    Travaux pratiques
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../99-tp/01-premier-pas.html">
+            
+                <a href="../99-tp/01-premier-pas.html">
+            
+                    
+                    Premiers pas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../99-tp/02-connexion.html">
+            
+                <a href="../99-tp/02-connexion.html">
+            
+                    
+                    Page de connexion personnalisée
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../99-tp/03-jdbc.html">
+            
+                <a href="../99-tp/03-jdbc.html">
+            
+                    
+                    Authentification via JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../99-tp/04-profil.html">
+            
+                <a href="../99-tp/04-profil.html">
+            
+                    
+                    Sécurisation par profil
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Spring Security</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="spring-security">Spring Security</h1>
+<ul>
+<li>Construit sur Spring Framework.</li>
+<li>Fournit plusieurs mod&#xE8;les d&#x2019;authentification : LDAP, OpenID, Base de donn&#xE9;es, ...</li>
+<li>Permet de s&#xE9;curiser une application &#xE0; plusieurs niveaux : URL, vues, m&#xE9;thode, objet, ...</li>
+<li>Open source.</li>
+</ul>
+<h2 id="dans-quels-cas-utiliser-spring-security-">Dans quels cas utiliser Spring Security ?</h2>
+<ul>
+<li>Une application bas&#xE9;e sur la JVM</li>
+<li>Un syst&#xE8;me d&#x2019;autorisation/authentification bas&#xE9; sur des r&#xF4;les.</li>
+<li>S&#xE9;curiser une application Web</li>
+<li>S&#x2019;int&#xE9;grer avec des syst&#xE8;mes tiers (OpenID, LDAP, Active Directory,
+ Base de donn&#xE9;es,...)</li>
+<li>S&#xE9;curiser l&#x2019;acc&#xE8;s &#xE0; un objet de l&#x2019;application</li>
+<li>S&#xE9;curiser son application de mani&#xE8;re d&#xE9;clarative (non intrusif)</li>
+</ul>
+<h2 id="modules">Modules</h2>
+<p>Spring Security est d&#xE9;coup&#xE9; (depuis la version 3.0) en modules :</p>
+<ul>
+<li>Core (spring-security-core)</li>
+<li>spring-security-cas</li>
+<li>LDAP (spring-security-ldap)</li>
+<li>Config (spring-security-config)</li>
+<li>spring-security-crypto</li>
+<li>Remoting (spring-security-remoting)</li>
+<li>Web (spring-security-web)</li>
+<li>spring-security-acl</li>
+<li>spring-security-taglibs</li>
+<li>spring-security-openid</li>
+</ul>
+<h3 id="core-spring-security-core">Core (spring-security-core)</h3>
+<p><strong>Core</strong> contient les classes/interfaces de base pour g&#xE9;rer l&apos;authentification et le contr&#xF4;le d&apos;acc&#xE8;s.
+Il est utilis&#xE9; par tous les autres modules.</p>
+<p>Il contient les packages suivants :</p>
+<ul>
+<li>org.springframework.security.core</li>
+<li>org.springframework.security.access</li>
+<li>org.springframework.security.authentication</li>
+<li>org.springframework.security.provisioning</li>
+</ul>
+<h3 id="remoting-spring-security-remoting">Remoting (spring-security-remoting)</h3>
+<p>Int&#xE9;gration avec <em>Spring Remoting</em>.</p>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.remoting</li>
+</ul>
+<h3 id="web-spring-security-web">Web (spring-security-web)</h3>
+<ul>
+<li>Permet d&apos;utiliser Spring Security dans un contexte Web.</li>
+<li>Offre une int&#xE9;gration avec l&apos;API Servlet.</li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.web</li>
+</ul>
+<h3 id="config-spring-security-config">Config (spring-security-config)</h3>
+<ul>
+<li>Espaces de nommage utilis&#xE9;s dans la configuration XML</li>
+<li>Classes / Annotations Java utilis&#xE9;es dans la configuration Java</li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.config</li>
+</ul>
+<h3 id="ldap-spring-security-ldap">LDAP (spring-security-ldap)</h3>
+<ul>
+<li>Authentification LDAP.</li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.ldap</li>
+</ul>
+<h3 id="oauth-20-core-spring-security-oauth2-core">OAuth 2.0 Core (spring-security-oauth2-core)</h3>
+<ul>
+<li>Support de <em>OAuth 2.0 Authorization Framework</em> et <em>OpenID Connect Core 1.0.</em></li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.oauth2.core</li>
+</ul>
+<h3 id="oauth-20-client-spring-security-oauth2-client">OAuth 2.0 Client (spring-security-oauth2-client)</h3>
+<ul>
+<li>Support d&apos;un client OAuth 2.0 ou OpenID Connect Core 1.0.</li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.oauth2.client</li>
+</ul>
+<h3 id="oauth-20-jose-spring-security-oauth2-jose">OAuth 2.0 JOSE (spring-security-oauth2-jose)</h3>
+<p>Support de JOSE (Javascript Object Signing and Encryption) construit autour des sp&#xE9;cifications suivantes :</p>
+<ul>
+<li>JSON Web Token (JWT)</li>
+<li>JSON Web Signature (JWS)</li>
+<li>JSON Web Encryption (JWE)</li>
+<li>JSON Web Key (JWK)</li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.oauth2.jwt</li>
+<li>org.springframework.security.oauth2.jose</li>
+</ul>
+<h3 id="acl-spring-security-acl">ACL (spring-security-acl)</h3>
+<p>Utilis&#xE9; pour appliquer Spring Security sur des objets m&#xE9;tiers.</p>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.acls</li>
+</ul>
+<h3 id="cas-spring-security-cas">CAS (spring-security-cas)</h3>
+<p>Int&#xE9;gration client CAS (Sigle sign-on).</p>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.cas</li>
+</ul>
+<h3 id="openid---spring-security-openid">OpenID - (spring-security-openid)</h3>
+<ul>
+<li>Support de OpenID Web.</li>
+<li>Authentification avec un serveur externe OpenID.</li>
+<li>Requiert OpenID4Java.</li>
+</ul>
+<p>Package de base :</p>
+<ul>
+<li>org.springframework.security.openid</li>
+</ul>
+<h3 id="test---spring-security-test">Test - (spring-security-test)</h3>
+<p>Support des tests Spring Security.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../02-web/" class="navigation navigation-next " aria-label="Next page: Spring Security Web">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spring Security","level":"1.2","depth":1,"next":{"title":"Spring Security Web","level":"1.3","depth":1,"path":"02-web/README.md","ref":"02-web/README.md","articles":[{"title":"Dépendances Maven","level":"1.3.1","depth":2,"path":"02-web/01-maven.md","ref":"02-web/01-maven.md","articles":[]},{"title":"springSecurityFilterChain","level":"1.3.2","depth":2,"path":"02-web/02-filtre.md","ref":"02-web/02-filtre.md","articles":[]},{"title":"Activer Spring Security","level":"1.3.3","depth":2,"path":"02-web/03-activer.md","ref":"02-web/03-activer.md","articles":[]},{"title":"Configuration Http","level":"1.3.4","depth":2,"path":"02-web/04-config-http.md","ref":"02-web/04-config-http.md","articles":[]},{"title":"Personnaliser la page d'authentification","level":"1.3.5","depth":2,"path":"02-web/05-personnaliser.md","ref":"02-web/05-personnaliser.md","articles":[]},{"title":"CSRF","level":"1.3.6","depth":2,"path":"02-web/06-csrf.md","ref":"02-web/06-csrf.md","articles":[]},{"title":"Tag JSP","level":"1.3.7","depth":2,"path":"02-web/07-taglibs.md","ref":"02-web/07-taglibs.md","articles":[]},{"title":"Gérer la déconnexion","level":"1.3.8","depth":2,"path":"02-web/08-deconnexion.md","ref":"02-web/08-deconnexion.md","articles":[]},{"title":"Configurer le gestionnaire d'identité","level":"1.3.9","depth":2,"path":"02-web/09-identite.md","ref":"02-web/09-identite.md","articles":[]},{"title":"Sécuriser des méthodes","level":"1.3.10","depth":2,"path":"02-web/10-methodes.md","ref":"02-web/10-methodes.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-spring-security","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Spring Security","gitbook":"*"},"file":{"path":"01-introduction/README.md","mtime":"2018-05-28T09:59:46.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-28T10:02:41.382Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-edit/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
